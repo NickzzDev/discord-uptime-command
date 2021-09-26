@@ -10,7 +10,7 @@ exports.run = (client, msg, args) => {
     const upembed = new Discord.MessageEmbed()
     .setColor("0x06F7C7")
     .setAuthor(`${msg.author.tag}`, msg.author.displayAvatarURL({ dynamic: true}))
-    .setDescription(`⌛ My Total Uptime is **${days}d ${hours}h ${minutes}m ${seconds}s**`)
+    .setDescription(`⌛ My Total Uptime is **${days}d ${hours}h ${minutes}m ${seconds}s**\n\nMade by [Nickzz](https://github.com/NickzzDev/)`)
     .setFooter(`Project NightFall`, client.user.displayAvatarURL({ dynamic: true }))
     .setTimestamp()
     msg.channel.send({ embeds: [upembed] })
